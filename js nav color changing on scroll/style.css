@@ -1,0 +1,25 @@
+.navbar {
+    background-color: brown;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    margin-top: -16px;
+}
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+body {
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.navbar_after {
+    background-color: rgb(6, 82, 56);
+    color: black;
+    width: 100%;
+}
