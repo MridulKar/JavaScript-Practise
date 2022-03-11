@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Off On</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <img id="off_bulb_1" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+
+            <img id="off_bulb_2" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+        </div>
+
+        <div style="margin-left: 62px;">
+            <button id="off" onclick="light_btn(0)">OFF</button>
+
+            <button id="on" onclick="light_btn(1)">ON</button>
+        </div>
+    </div>
+
+    <script>
+        function light_btn(match) {
+
+            for (var i = 1; i <= 2; i++) {
+                if (match == 0) {
+                    document.getElementById('off_bulb_' + (i)).src = "https://www.w3schools.com/js/pic_bulboff.gif";
+                } else {
+                    document.getElementById('off_bulb_' + (i)).src = "https://www.w3schools.com/js/pic_bulbon.gif";
+                }
+
+            }
+        }
+    </script>
+</body>
+
+</html>
